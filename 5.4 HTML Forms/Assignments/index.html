@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5.4 HTML Forms Example</title>
+</head>
+
+<body>
+  <form onsubmit="processForm()">
+    <h4>Login</h4>
+    <input type="text" placeholder="Enter first name" id="firstname">
+    <input type="text" placeholder="Enter last name" id="lastname">
+  <input type="submit" value="Login" id="submit">
+  </form>
+  <script>
+    function processForm() {
+      var firstnameBox = document.getElementById("firstname");
+      var firstname = firstnameBox.value;
+      var lastnameBox = document.getElementById("lastname")
+      var lastname = lastnameBox.value;
+      alert("Hello " + firstname + " " + lastname);
+    }
+  </script>
+</body>
+
+</html>
